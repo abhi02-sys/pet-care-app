@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pet Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="pet-form" id="petForm">
+            <h1>Pet Profile</h1>
+            
+            <div class="form-group">
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="petType">Pet Type:</label>
+                <select id="petType" required>
+                    <option value="">Select Pet Type</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="petAge">Pet Age:</label>
+                <input type="number" id="petAge" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="petGender">Pet Gender:</label>
+                <select id="petGender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="petBreed">Pet Breed:</label>
+                <input type="text" id="petBreed" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="healthCondition">Health Condition:</label>
+                <textarea id="healthCondition"></textarea>
+            </div>
+            
+            <button type="submit" class="save-btn">Save Profile</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
