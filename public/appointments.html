@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Appointments</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body >
+    <div class="bg">
+        <nav class="navbar">
+            <div class="nav-left">
+              <img src="logo.png" alt="PetCare Logo" class="nav-logo">
+              <span class="brand-name">PetCare</span>
+            </div>
+            <span class="nav-right">
+                    <p><a href="dashboard.html">Home</a></p>
+                    <p><a href="todo.html" class="active">To-Do</a></p>
+                    <p><a href="appointments.html">Appointments</a></p>
+                    <p><a href="health-records.html">Health-Records</a></p>
+            </span>
+          </nav>
+        <main >
+            <div class="appointments-container">
+                <h2 id="add">Upcoming Appointments</h2>
+                
+                <div class="add-appointment">
+                    <select id="appointment-type">
+                        <option value="">Select appointment type</option>
+                        <option value="Vet Visit">Vet Visit</option>
+                        <option value="Vaccination">Vaccination</option>
+                        <option value="Grooming">Grooming</option>
+                        <option value="Dental">Dental Checkup</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    
+                    <input type="text" id="appointment-details" placeholder="Details (e.g. 'Annual checkup')">
+                    
+                    <input type="datetime-local" id="appointment-date">
+                    
+                    <button id="add-appointment-btn">Add Appointment</button>
+                </div>
+                
+                <ul id="appointments-list">
+                    <!-- Appointments will be loaded here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    
+    <script src="appointments.js"></script>
+</body>
+</html>
